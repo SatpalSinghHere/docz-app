@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
+
 
 
 const Header = ({ children }: HeaderProps) => {
@@ -24,12 +24,7 @@ const Header = ({ children }: HeaderProps) => {
                 />
             </Link>
             {children}
-            <SignedOut>
-                <SignInButton />
-            </SignedOut>
-            <SignedIn >
-                <UserButton />
-            </SignedIn>
+            
         </div>
     )
 }
